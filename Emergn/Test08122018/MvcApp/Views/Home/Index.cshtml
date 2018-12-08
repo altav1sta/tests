@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Business.Models.Category>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    <h2>List of available categories</h2>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Id</td>
+                <td>@c.Name</td>
+            </tr>
+        }
+    </table>
+</div>

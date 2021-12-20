@@ -45,3 +45,4 @@ for (var i = 1; i < cans.Length; i++)
 Console.WriteLine(String.Join(" ", mostSticky.OrderBy(x => x)));
 Console.WriteLine();
 Console.WriteLine(mostSticky.Sum());
+Console.WriteLine(cans.Select((item, index) => item.Length == 0 ? index : 0).Sum());
